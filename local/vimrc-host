@@ -1,0 +1,11 @@
+" 
+" User's local vim configuration
+"  
+" Developed by Lubomir Host 'rajo' <rajo AT platon.sk>
+" Copyright (c) 2000-2005 Platon Group, http://platon.sk/
+" All rights reserved.
+"
+let g:author  = "Tingkun"
+let g:email   = "tingkun@playcrab.com"
+let g:company = "Playcrab Corp."
+
