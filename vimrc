@@ -89,7 +89,7 @@ set autoindent
 
 let mapleader=";"
 " Open and close the NERD_tree.vim separately
-map <F7> :NERDTreeToggle<CR> 
+map wm :NERDTreeToggle<CR> 
 "打开Tlist
 "nmap <F8> <ESC>:Tlist<CR> 
 nmap <F8> :TagbarToggle<CR>
