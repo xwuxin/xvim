@@ -1,4 +1,3 @@
-
 let g:author  = "xwuxin"
 let g:email   = "xwuxin@xwuxin.com"
 let g:company = "Playcrab Corp."
