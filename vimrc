@@ -5,6 +5,13 @@ let g:company = "Playcrab Corp."
 " 鼠标指针当前行显示一条线
 set cursorline
 
+" 转到最后一次编辑的地方
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe
+	"normal! g'\"" | endif
+endif
+
+
 " 可以在buffer的任何地方使用鼠标(类似office中在工作区双击鼠标定位）
 set mouse=a                                                                                                                               
 set selection=exclusive
@@ -199,5 +206,5 @@ cnoremap <C-Tab> <C-C><C-W>w
 onoremap <C-Tab> <C-C><C-W>w
 
 if has("autocmd")
-	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif	
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
